@@ -1,0 +1,76 @@
+# rmp configuration. Copy to ~/.config/rmp/config.toml (or $XDG_CONFIG_HOME/rmp/config.toml).
+# Every option is optional; the values shown are the defaults.
+# Invalid values are reported in the status line and replaced by defaults.
+
+# Directories scanned into the library. "~" is expanded.
+# Default: ~/Music and ~/Videos, whichever exist.
+# media_dirs = ["~/Music", "~/Videos"]
+
+# Startup volume, 0..=130.
+volume = 80
+
+# View shown at startup: "library", "files", "playlists", "queue" or "history".
+start_view = "library"
+
+# Rescan the media directories when the app starts.
+rescan_on_start = true
+
+# Theme colors as #RRGGBB. Unset entries keep the built-in palette shown here.
+[theme]
+# bg = "#0B0F14"             # window background
+# surface = "#121922"        # panels
+# raised = "#19232D"         # selected row background
+# text = "#E6EDF3"           # primary text
+# text_secondary = "#81909F" # artist, album, metadata
+# text_muted = "#52606E"     # unavailable items, hints
+# accent = "#51D6D0"         # focused panel, active tab
+# accent_alt = "#6096E8"     # secondary highlights
+# playing = "#79D8A0"        # now-playing marker
+# warning = "#E4B46A"
+# error = "#E4777C"
+# border = "#293540"
+
+# Keybindings: action = "key". One key per action; it replaces that action's defaults.
+# Key forms: single characters ("j", "J", "+"), names ("enter", "esc", "tab", "space",
+# "backspace", "left", "right", "up", "down", "pgup", "pgdown", "home", "end"),
+# and "ctrl-" prefixed ("ctrl-d"). Shifted letters are written uppercase ("J").
+# Defaults (listed here commented out; uncomment to change):
+[keys]
+# view_library = "1"
+# view_files = "2"
+# view_playlists = "3"
+# view_queue = "4"
+# view_history = "5"
+# down = "j"            # also: Down arrow
+# up = "k"              # also: Up arrow
+# left = "h"
+# right = "l"
+# top = "g"
+# bottom = "G"
+# page_down = "ctrl-d"  # also: pgdown
+# page_up = "ctrl-u"    # also: pgup
+# enter = "enter"
+# toggle_pause = "space"
+# stop = "x"
+# next = "n"
+# prev = "p"
+# cycle_repeat = "r"
+# toggle_shuffle = "s"
+# enqueue = "a"
+# remove = "d"
+# move_down = "J"
+# move_up = "K"
+# search = "/"
+# seek_back = "left"
+# seek_forward = "right"
+# volume_down = "-"
+# volume_up = "+"       # also: =
+# focus_next = "tab"
+# help = "?"
+# quit = "q"            # also: ctrl-c
+# rescan = "u"
+# add_to_playlist = "A"
+# new_playlist = "N"
+# rename = "R"
+# delete = "D"
+# clear_queue = "C"
